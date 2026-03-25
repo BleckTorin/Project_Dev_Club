@@ -1,54 +1,93 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0; 
     box-sizing: border-box;
+    font-family: "Inter", sans-serif; 
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background: #09090b;
-    align-items: center;
-    color: #e4e4e7;
-    padding: 40px;
+    display: flex; /* Mostra os elementos em linha */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    background: #09090b; /*Cor de fundo*/
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    color: #e4e4e7; /*Cor do texto*/
+    padding: 40px; /* Espaçamento interno da página */
 }
 
 h1 {
-    font-size: 40px;
-    color: #fafafa;
-    font-weight: bold;
+    font-size: 40px; /* Tamanho da fonte do título */
+    color: #fafafa; /*Cor do título*/
+    font-weight: bold; /* Deixa o título em negrito */
 }
 
 span {
-    color: #22c55e;
+    color: #22c55e; /* Cor do texto dentro do span */
 }
 
 p {
-    color: #71717a;
-    margin: 10px;
+    color: #71717a; /* Cor do parágrafo */
+    margin: 10px; /* Espaçamento entre os parágrafos */
 }
 
 textarea {
-    resize: none;
-    max-width: 640px;
-    color: #fafafa;
-    width: 100%;
-    padding: 16px;
-    border: 2px solid #27272a;
-    border-radius: 10px;
-    background: #141419;
-    outline: none;
+    resize: none; /* Impede que o usuário redimensione a área de texto */
+    max-width: 640px; /* Largura máxima da área de texto */
+    color: #fafafa; /* Cor do texto dentro da área de texto */
+    width: 100%; /* A área de texto ocupará toda a largura disponível */
+    padding: 16px; /* Espaçamento interno da área de texto */
+    border: 2px solid #27272a; /* Borda da área de texto */
+    border-radius: 10px; /* Arredonda os cantos da área de texto */
+    background: #141915; /* Cor de fundo da área de texto */
+    outline: none; /* Remove a borda de foco padrão */
+    margin-top: 10px; /* Espaçamento acima da área de texto */  
 }
 
 button { 
-    width: 100%;
-    max-width: 640px;
-    background: #22c55e;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 10px;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    margin-top: 10px;
+    width: 100%; /* O botão ocupará toda a largura disponível */
+    max-width: 640px; /* Largura máxima do botão */
+    background: #22c55e; /* Cor de fundo do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    font-weight: bold; /* Deixa o texto do botão em negrito */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 15px; /* Espaçamento interno do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+    margin-top: 10px; /* Espaçamento acima do botão */
 }
+
+.bloco-codigo {
+    background: #141415; /* Cor de fundo do bloco de código */
+    border: 2px solid #27272a; /* Borda do bloco de código */
+    border-radius: 12px; /* Arredonda os cantos do bloco de código */ 
+    padding: 16px; /* Espaçamento interno do bloco de código */
+    font-size: 14px; /* Tamanho da fonte do bloco de código */
+    max-width: 400px; /* Largura máxima do bloco de código */
+    width: 100%; /* O bloco de código ocupará toda a largura disponível */
+    max-height: 400px; /* Altura máxima do bloco de código */
+    color: #34d399; /* Cor do texto dentro do bloco de código */
+    white-space: pre-wrap; /* Mantém espaços em branco e quebras de linha */
+    line-height: 2.5; /* Espaçamento entre as linhas do bloco de código */
+    overflow: auto; /* Adiciona uma barra de rolagem se o conteúdo do bloco de código ultrapassar seu tamanho */
+}
+
+.resultado-codigo {
+    width: 100%;
+    margin-top: 10px; /* Espaçamento acima do resultado do código */
+    max-width: 500px;;
+    height: 100%;
+    padding: 16px;
+    min-height: 300px; /* Altura mínima do resultado do código */
+    border: 1px solid #27272a; /* Borda do resultado do código */
+    border-radius: 12px; /* Arredonda os cantos do resultado do código */
+    background: #141415; /* Cor de fundo do resultado do código */
+}
+
+.bloco {
+    display: flex; /* Mostra os elementos em linha */
+    width: 100%; /* O bloco geral ocupará toda a largura disponível */
+    max-width: 1200px;
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento acima do bloco geral */;
+    gap: 20px; /* Espaçamento entre os elementos dentro do bloco geral */
+}
+

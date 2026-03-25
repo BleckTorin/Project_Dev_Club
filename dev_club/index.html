@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>DevClub - Gerador de IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+    
     <h1>
-        CSS Gerador <span>com IA</span> ⚡️
+        CSS Gerador <span>com IA</span>⚡️
     </h1>
 
     <p>
@@ -19,12 +25,26 @@
     </p>
 
     <!-- area de texto -->
-    <textarea rows="3" placeholder="Ex: Bola azul pingando"></textarea>
+    <!--rows - linhas -->
+    <textarea rows="3" class="caixa-texto" placeholder="Ex: Bola azul pingando"></textarea>
 
-    <button>Gerar Código ⚡️</button>
-    <script src="scripts.js">
-        
-    </script>
+    <button class="botao-gerar">Gerar Código ⚡️</button>
+
+    <div class="bloco">
+        <div class="bloco-resultado">
+            <h2>Código</h2>
+            <p class="bloco-codigo"></p>
+        </div>
+        <div class="bloco-preview">
+
+            <h2>Preview</h2>
+            <iframe class="resultado-codigo"></iframe>
+
+        </div>
+    </div>
+
 </body>
+
+<script src="js.js"></script>
 
 </html>
